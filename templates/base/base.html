@@ -13,11 +13,15 @@
     <div class="container-fluid"> <!--Esto es un contenedor principal-->
         <div class="row"> <!--Aqui estamos usando la clase "row" que significa "Fila", o "Hilera"-->
             <div class="clo-8">
-                {% block content%}
+                {% block columna8 %}
 
                 {% endblock %}
             </div> <!--Aqui nos esta creando una columna de tamaño 8-->
-            <div class="col-4">col-4</div> <!--Aqui nos esta creando una columna de tamaño 4-->
+            <div class="col-4">
+                {% block columna4 %}
+
+                {% endblock %}
+            </div> <!--Aqui nos esta creando una columna de tamaño 4-->
         </div><!--Cierre el row-->
     </div><!--Cierra el container-->
 
