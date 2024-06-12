@@ -1,0 +1,29 @@
+{% extends "base/base.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{%block columna8 %}
+
+<br>
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Bienvenido {{nombre}}</h4>
+    <p>Ahora si sabemos procesar solicitudes GET y POST!</p>
+    <hr>
+    <p class="mb-0">Excelente!</p>
+  </div>
+
+{%endblock %}
+
+{% block columna4 %}
+  <p>Formulario</p>
+  <form action="/" method="POST">
+    <div class="form-group">
+      <label for="name">Ingrese su nombre</label>
+      <input type="text" class="form-control" name="Nombre">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+{% endblock %}
+
+
+
